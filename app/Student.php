@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use function Symfony\Component\Console\Tests\Command\createClosure;
 
 class Student extends Model
 {
@@ -10,9 +11,12 @@ class Student extends Model
     protected $primaryKey = 'student_id';
     protected  $fillable =[
         'student_name',
-        'age',
-        'address',
+        'email',
         'telephone',
+        'feedback',
         'active',
+        'create at',
+        'updated_at'
     ];
+
 }

@@ -15,11 +15,11 @@
         <thead>
         <th>ID</th>
         <th>Name</th>
-        <th>age</th>
-        <th>address</th>
+        <th>Email</th>
         <th>telephone</th>
+        <th>Feedback</th>
         <th>active</th>
-        <th>Action </th>
+
         </thead>
 
         <tbody>
@@ -28,9 +28,9 @@
             <tr>
                 <td >{{$student->student_id}}</td>
                 <td >{{$student->student_name}}</td>
-                <td >{{$student->age}}</td>
-                <td >{{$student->address}}</td>
+                <td >{{$student->email}}</td>
                 <td >{{$student->telephone}}</td>
+                <td >{{$student->feedback}}</td>
                 <td>{{$student->active}}</td>
 
             </tr>
@@ -39,7 +39,6 @@
 
         </tbody>
     </table>
-
 </div>
 
 

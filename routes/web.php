@@ -16,7 +16,9 @@ Route::get('/', function () {
 });
 Route::get("/sudent","MyController@studentlist");
 
-Route::get('/them-student',"MyController@themstudent");
-Route::post('/them-student',"MyController@luustudent");
+
+Route::get('/phanhoi',"MyController@phanhoistudent");
+Route::post('/phanhoi',"MyController@luustudent");
+
 
 

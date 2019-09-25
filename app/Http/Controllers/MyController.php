@@ -13,11 +13,11 @@ class MyController extends Controller
         return view("list.list", compact("students"));
     }
 
-    public function themstudent()
+    public function phanhoistudent()
     {
         $students = Student::all();
 
-        return view("more.more", compact("students"));
+        return view("page.survey", compact("students"));
 
     }
 
@@ -44,15 +44,17 @@ class MyController extends Controller
             //dd($request->all());
             student::create([
                 "student_name" => $request->get("student_name"),
-                "age" => $request->get("age"),
-                "address" => $request->get("address"),
+                "email" => $request->get("email"),
                 "telephone" => $request->get("telephone"),
+                "feedback" => $request->get("feedback"),
+
             ])->save();
         } catch (\Exception $e) {
             die($e->getMessage());
         }
         return redirect("/sudent");
     }
+
 
 
 
